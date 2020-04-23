@@ -2,7 +2,44 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const runChallenge1 = () => {
+  var isPrincessHappy = false;
+  // Write your code below this
+
+
+  // Write your code above this
+  if (isPrincessHappy) {
+    console.log('You have solved the first challenge!');
+  }
+}
+
+const runChallenge2 = () => {
+  var princessName = '';
+  // Write your code below this
+
+
+  // Write your code above this
+  if (princessName === 'Veronica') {
+    console.log('You have solved the second challenge!');
+  }
+}
+
+const runChallenge3 = (princessBirthYear) => {
+  var princessAge;
+  // Write your code below this
+
+
+
+  // Write your code above this
+  if (princessAge === 34) {
+    console.log('You have solved the third challenge!');
+  }
+}
+
 function App() {
+  runChallenge1();
+  runChallenge2();
+  runChallenge3(1986);
   return (
     <div className="App">
       <header className="App-header">
