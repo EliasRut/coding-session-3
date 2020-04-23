@@ -37,10 +37,61 @@ const runChallenge3 = (princessBirthYear) => {
   }
 }
 
+const runChallenge4 = () => {
+  var princesses = ['Anna', 'Syndi', 'Theodora'];
+  // Write your code below this
+
+
+
+  // Write your code above this
+  if (princesses.length >= 4) {
+    console.log('You have solved the fourth challenge!');
+  }
+}
+
+const runChallenge5 = () => {
+  var princesses = ['Anna', 'Syndi', 'Theodora'];
+  // Write your code below this
+
+
+
+  // Write your code above this
+  if (princesses[0] === 'Veronica') {
+    console.log('You have solved the fifth challenge!');
+  }
+}
+
+const runChallenge5 = () => {
+  var princesses = ['Anna', 'Syndi', 'Theodora'];
+  // Write your code below this
+
+
+
+  // Write your code above this
+  if (princesses[0] === 'Veronica') {
+    console.log('You have solved the fifth challenge!');
+  }
+}
+
+const runChallenge6 = () => {
+  var princesses = ['Anna', 'Syndi', 'Theodora'];
+  // Write your code below this
+
+
+
+  // Write your code above this
+  if (princesses.length === 0) {
+    console.log('You have solved the sixth challenge!');
+  }
+}
+
 function App() {
   runChallenge1();
   runChallenge2();
   runChallenge3(1986);
+  runChallenge4();
+  runChallenge5();
+  runChallenge6();
   return (
     <div className="App">
       <header className="App-header">
