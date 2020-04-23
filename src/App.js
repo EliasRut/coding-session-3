@@ -60,18 +60,6 @@ const runChallenge5 = () => {
   }
 }
 
-const runChallenge5 = () => {
-  var princesses = ['Anna', 'Syndi', 'Theodora'];
-  // Write your code below this
-
-
-
-  // Write your code above this
-  if (princesses[0] === 'Veronica') {
-    console.log('You have solved the fifth challenge!');
-  }
-}
-
 const runChallenge6 = () => {
   var princesses = ['Anna', 'Syndi', 'Theodora'];
   // Write your code below this
