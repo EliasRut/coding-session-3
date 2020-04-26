@@ -1,19 +1,5 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,15 +10,51 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Container {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PageTitle {
+  font-size: 20px;
+}
+
+.Challenge {
+  width: 360px;
+  height: 360px;
+  background-color: #464D59;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin: 16px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.Challenge button {
+  height: 40px;
+}
+
+.Challenge .header {
+  font-size: 16px;
+}
+
+.Challenge .outputHeader {
+  font-size: 14px;
+}
+
+.Challenge .outputSpace {
+  background-color: #fff;
+  border: 1px solid #999;
+  padding: 8px;
+  font-family: monospace;
+  color: #333;
+  height: 120px;
+  border-radius: 4px;
 }
