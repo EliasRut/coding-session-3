@@ -40,8 +40,8 @@ const runChallenge3 = (princessBirthYear) => {
 const runChallenge4 = () => {
   var princesses = ['Anna', 'Syndi', 'Theodora'];
   // Write your code below this
-
-
+ 
+  princesses.push('Joe');
 
   // Write your code above this
   if (princesses.length >= 4) {
@@ -53,7 +53,7 @@ const runChallenge5 = () => {
   var princesses = ['Anna', 'Syndi', 'Theodora'];
   // Write your code below this
 
-
+princesses[0] = 'Veronica';
 
   // Write your code above this
   if (princesses[0] === 'Veronica') {
@@ -65,7 +65,8 @@ const runChallenge6 = () => {
   var princesses = ['Anna', 'Syndi', 'Theodora'];
   // Write your code below this
 
-
+  //princesses.length=0;
+princesses = [];
 
   // Write your code above this
   if (princesses.length === 0) {
