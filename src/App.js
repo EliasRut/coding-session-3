@@ -155,7 +155,9 @@ const runChallenge10 = () => {
   // eslint-disable-next-line
   var planetMass;
   // Write your code below this
-
+for ( var i=0; i < solarSystemPlanets.length; i++) {
+  sum +=solarSystemPlanets[i];
+}
   // Calculate the sum of the planet weights.
 
   // Write your code above this
