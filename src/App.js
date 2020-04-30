@@ -152,15 +152,19 @@ const runChallenge9 = () => {
 
   // Write your code above this
   else{
-    if (inputElement.value<13 & inputElement.value>0){
+    debugger;
+    if (inputNumber<13 && inputNumber>0){
     
       outputElement.innerHTML = listOfOfficialDisneyPrincesses[inputElement.value-1];
     
     }
     else{
-      if (inputElement.value<31 & inputElement.value>29){
+      if (inputNumber<31 && inputNumber>29){
+        outputElement.innerHTML = listOfOfficialDisneyPrincesses.map(
+          (name, index) => `${index+1} ${name}`
+        ).join('<br />');
       //if (inputElement.value === 13){
-        outputElement.innerHTML = '1 SnowWhite   2 Cinderella   3 Aurora   4 Ariel   5 Belle   6 Jasmine   7 Pocahontas   8 Mulan   9 Tiana   10 Rapunzel   11 Merida   12 Moana';
+        // outputElement.innerHTML = '1 SnowWhite   2 Cinderella   3 Aurora   4 Ariel   5 Belle   6 Jasmine   7 Pocahontas   8 Mulan   9 Tiana   10 Rapunzel   11 Merida   12 Moana';
         //outputElement.innerHTML = 'it works';
       }
       else{  
