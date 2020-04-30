@@ -69,8 +69,6 @@ const runChallenge6 = () => {
   var princesses = ['Anna', 'Syndi', 'Theodora'];
   // Write your code below this
 
-  princesses = 0
-
 
   // Write your code above this
   if (princesses.length === 0) {
@@ -90,7 +88,7 @@ const runChallenge7 = () => {
 
 
   // Write your code above this
-  if (princesses.length === 0) {
+  if (princesses.length === 4 ) {
     var outputElement = document.getElementById('challenge7Output');
     outputElement.innerHTML = 'You have solved the seventh challenge!';
   }
