@@ -6,7 +6,8 @@ import './App.css';
 const runChallenge1 = () => {
   var isPrincessHappy = false;
   // Write your code below this
-    isPrincessHappy = 'happy'
+   
+  isPrincessHappy = 'happy'
 
   // Write your code above this
   if (isPrincessHappy) {
@@ -17,6 +18,7 @@ const runChallenge1 = () => {
 const runChallenge2 = () => {
   var princessName = '';
   // Write your code below this
+  
   princessName = 'Veronica'
 
   // Write your code above this
@@ -38,10 +40,50 @@ const runChallenge3 = (princessBirthYear) => {
 }
 
 
+const runChallenge4 = () => {
+  var princesses = ['Anna', 'Syndi', 'Theodora'];
+  // Write your code below this
+
+princesses = ['Veronica', 'Anna', 'Syndi', 'Theodora'];
+
+  // Write your code above this
+  if (princesses.length >= 4) {
+    console.log('You have solved the fourth challenge!');
+  }
+}
+
+const runChallenge5 = () => {
+  var princesses = ['Anna', 'Syndi', 'Theodora'];
+  // Write your code below this
+
+  princesses[0] = 'Veronica';
+
+  // Write your code above this
+  if (princesses[0] === 'Veronica') {
+    console.log('You have solved the fifth challenge!');
+  }
+}
+
+const runChallenge6 = () => {
+  var princesses = ['Anna', 'Syndi', 'Theodora'];
+  // Write your code below this
+
+  princesses = [];
+
+  // Write your code above this
+  if (princesses.length === 0) {
+    console.log('You have solved the sixth challenge!');
+  }
+}
+
+
 function App() {
   runChallenge1();
   runChallenge2();
   runChallenge3(1986);
+  runChallenge4();
+  runChallenge5();
+  runChallenge6();
   return (
     <div className="App">
       <header className="App-header">
