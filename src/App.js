@@ -140,7 +140,7 @@ const runChallenge9 = () => {
   var inputValue = inputElement.value;
   var inputNumber = Number(inputValue);
   var outputElement = document.getElementById('challenge9Output');
-    
+
   // Write your code below this
   // Sorry, no automatic grading - you need to know if you solved this one yourself
 
@@ -164,15 +164,27 @@ const runChallenge9 = () => {
         ).join('<br />');
         // outputElement.innerHTML = '1 SnowWhite   2 Cinderella   3 Aurora   4 Ariel   5 Belle   6 Jasmine   7 Pocahontas   8 Mulan   9 Tiana   10 Rapunzel   11 Merida   12 Moana';
         //outputElement.innerHTML = 'it works';
-      }
-      else{  
-        outputElement.innerHTML = 'No Prinzess has this number. Check out their numbers with pressing 13';
-      }
     }
+    else{  
+      outputElement.innerHTML = 'No Prinzess has this number. Check out their numbers with pressing 13';
+    }
+    
   }
 
 
+  // if (isNaN(inputNumber) && inputValue !== 'list') { 
+  //   outputElement.innerHTML = 'Error: Not a number.';
+  // } else if (listOfOfficialDisneyPrincesses[inputNumber] !== undefined){
+  //   outputElement.innerHTML = listOfOfficialDisneyPrincesses[inputNumber - 1];
+  // } else if (inputValue === 'list') {
+  //   outputElement.innerHTML = listOfOfficialDisneyPrincesses.map(
+  //     (name, index) => (index + 1) + ' ' + name
+  //   )
+  // } else {
+  //   outputElement.innerHTML = 'No Prinzess has this number. Check out their numbers with writing "list"';
+  // }
 
+}
 
 function App() {
   return (
