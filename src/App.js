@@ -72,7 +72,7 @@ const runChallenge6 = () => {
 
 
   //princesses.length=0;
-princesses = [];
+  princesses = [];
 
   // Write your code above this
   if (princesses.length === 0) {
@@ -92,7 +92,7 @@ const runChallenge7 = () => {
   princesses = [];
 
   // Write your code above this
-  if (princesses.length === 0) {
+  if (princesses.length === 4 ) {
     var outputElement = document.getElementById('challenge7Output');
     outputElement.innerHTML = 'You have solved the seventh challenge!';
   }
@@ -186,6 +186,63 @@ const runChallenge9 = () => {
 
 }
 
+const runChallenge10 = () => {
+  // eslint-disable-next-line
+  const solarSystemPlanets = [
+    0.055, // Mercury
+    0.815, // Venus
+    1, // Earth
+    0.107, // Mars
+    317.8, // Jupiter
+    95.159, // Saturn
+    14.536, // Uranus
+    17.147, // Neptune
+  ];
+  // eslint-disable-next-line
+  var planetMass = 0;
+  // Write your code below this
+
+  // Calculate the sum of the planet weights.
+
+  for (var i = 0; solarSystemPlanets.length>i;i++){
+       planetMass = solarSystemPlanets[i] + planetMass;
+  }
+  var outputElement = document.getElementById('challenge10Output');
+  outputElement.innerHTML = planetMass;
+  // Write your code above this
+  if (planetMass === 446.619 ) {
+    outputElement.innerHTML = 'You have solved the tenth challenge!';
+  }
+}
+
+const runChallenge11 = () => {
+  // eslint-disable-next-line
+  const solarSystemPlanets = [
+    ['Mercury', 0.055], // Mass is in Earths
+    ['Venus', 0.815],
+    ['Earth', 1],
+    ['Mars', 0.107],
+    ['Jupiter', 317.8],
+    ['Saturn', 95.159],
+    ['Uranus', 14.536],
+    ['Neptune', 17.147],
+  ];
+  // eslint-disable-next-line
+  var planetMass;
+  // Write your code below this
+
+  // Calculate the sum of the planet weights.
+
+  // Write your code above this
+  if (planetMass === 446.619 ) {
+    var outputElement = document.getElementById('challenge11Output');
+    outputElement.innerHTML = 'You have solved the tenth challenge!';
+  }
+}
+
+const runChallenge12 = () => {
+}
+
 function App() {
   return (
     <div className="App">
@@ -272,6 +329,30 @@ function App() {
           <div>
             <div className="outputHeader">Output:</div>
             <div className="outputSpace" id="challenge9Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 10</div>
+          <button onClick={() => runChallenge10()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge10Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 11</div>
+          <button onClick={() => runChallenge11()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge11Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 12</div>
+          <button onClick={() => runChallenge12()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge12Output"></div>
           </div>
         </div>
       </div>
