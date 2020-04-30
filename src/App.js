@@ -255,25 +255,41 @@ const runChallenge12 = () => {
     ['Uranus', 14.536],
     ['Neptune', 17.147],
   ];
-  const SortsolarSystemPlanets = []
+  var SortSolarSystemPlanets = []
   // Write your code below this
   // Sorry, no automatic grading - you need to know if you solved this one yourself
 
   // Sort the planets by their weight, and write the list into the output place
   
-  for (var i = 0; solarSystemPlanets.length>i;i++){
-    for (var j = 0; solarSystemPlanets.length>j;j++){
-      if (solarSystemPlanets[i][1] > SortsolarSystemPlanets[j][1]){
+  // for (var i = 0; solarSystemPlanets.length>i;i++){
+  //   for (var j = 0; solarSystemPlanets.length>j;j++){
+  //     if (solarSystemPlanets[i][1] > SortsolarSystemPlanets[j][1]){
 
-      }
+  //     }
+  //   }
+
+  // }
+
+  var j=0;
+  SortSolarSystemPlanets[0] = solarSystemPlanets[0];
+  for (var i = 1; solarSystemPlanets.length>i;i++){
+    if (solarSystemPlanets[i][1] > SortSolarSystemPlanets[j][1]){
+      SortSolarSystemPlanets.splice(j,0,solarSystemPlanets[i]);
+      j++
+    }
+    else{
+      SortSolarSystemPlanets.splice(0,0,solarSystemPlanets[i])
+      j++;
     }
 
   }
 
+
+
   
-    outputElement.innerHTML = solarSystemPlanets.map(
-      (name, index) => `${index+1} ${name}`
-    ).join('<br />');
+    outputElement.innerHTML = SortSolarSystemPlanets.map(
+       (name, index) => `${index+1} ${name}`
+     ).join('<br />');
 
   // Write your code above this
 }
@@ -289,6 +305,8 @@ const runChallenge13 = () => {
 
   // Call the function callMeForChallenge13!
 
+callMeForChallenge13 ();
+
   if (numCallMeForChallenge13WasCalled === 1) {
     outputElement.innerHTML = 'You have solved the 13th challenge!';
   }
@@ -299,8 +317,11 @@ const runChallenge14 = () => {
   var outputElement = document.getElementById('challenge14Output');
   // Write your code below this
 
-  var doPlanetsSpin;
+  var doPlanetsSpin = () => {
+    return true;
+  }
   // Implement the function doPlanetsSpin - it should just always return true!
+
 
 
   // Write your code above this
@@ -323,10 +344,18 @@ const runChallenge15 = () => {
   const outputElement = document.getElementById('challenge15Output');
   // Write your code below this
 
-  var getPlanetMass;
-  // Implement the function getPlanetMass - it should
+    // Implement the function getPlanetMass - it should
   //    take a name as parameter and
   //    return the mass of the planet with that name
+  
+  var getPlanetMass = (planetName) => {
+
+    for (var i = 0; solarSystemPlanets.length>i;i++){
+      if(solarSystemPlanets[i][0] === planetName){
+        return solarSystemPlanets[i][1];
+      }
+    }
+  }
 
   // Write your code above this
   if (getPlanetMass('Mercury') === 0.055 && getPlanetMass('Saturn') === 95.159) {
