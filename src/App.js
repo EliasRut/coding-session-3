@@ -200,17 +200,16 @@ const runChallenge10 = () => {
   ];
   // eslint-disable-next-line
   var planetMass = 0;
+  var outputElement = document.getElementById('challenge10Output');
   // Write your code below this
 
   // Calculate the sum of the planet weights.
 
   for (var i = 0; solarSystemPlanets.length>i;i++){
-       planetMass = solarSystemPlanets[i] + planetMass;
+    planetMass = solarSystemPlanets[i] + planetMass;
   }
-  var outputElement = document.getElementById('challenge10Output');
-  outputElement.innerHTML = planetMass;
   // Write your code above this
-  if (planetMass === 446.619 ) {
+  if (planetMass >= 446.618 && planetMass <= 446.620) {
     outputElement.innerHTML = 'You have solved the tenth challenge!';
   }
 }
@@ -228,19 +227,55 @@ const runChallenge11 = () => {
     ['Neptune', 17.147],
   ];
   // eslint-disable-next-line
-  var planetMass;
+  var planetMass = 0;
+  var outputElement = document.getElementById('challenge11Output');
   // Write your code below this
 
   // Calculate the sum of the planet weights.
 
+  for (var i = 0; solarSystemPlanets.length>i;i++){
+    planetMass = solarSystemPlanets[i][1] + planetMass;
+  }
   // Write your code above this
-  if (planetMass === 446.619 ) {
-    var outputElement = document.getElementById('challenge11Output');
-    outputElement.innerHTML = 'You have solved the tenth challenge!';
+  if (planetMass >= 446.618 && planetMass <= 446.620) {
+    outputElement.innerHTML = 'You have solved the eleventh challenge!';
   }
 }
 
 const runChallenge12 = () => {
+  // eslint-disable-next-line
+  var outputElement = document.getElementById('challenge12Output');
+  const solarSystemPlanets = [
+    ['Mercury', 0.055], // Mass is in Earths
+    ['Venus', 0.815],
+    ['Earth', 1],
+    ['Mars', 0.107],
+    ['Jupiter', 317.8],
+    ['Saturn', 95.159],
+    ['Uranus', 14.536],
+    ['Neptune', 17.147],
+  ];
+  const SortsolarSystemPlanets = []
+  // Write your code below this
+  // Sorry, no automatic grading - you need to know if you solved this one yourself
+
+  // Sort the planets by their weight, and write the list into the output place
+  
+  for (var i = 0; solarSystemPlanets.length>i;i++){
+    for (var j = 0; solarSystemPlanets.length>j;j++){
+      if (solarSystemPlanets[i][1] > SortsolarSystemPlanets[j][1]){
+
+      }
+    }
+
+  }
+
+  
+    outputElement.innerHTML = solarSystemPlanets.map(
+      (name, index) => `${index+1} ${name}`
+    ).join('<br />');
+
+  // Write your code above this
 }
 
 function App() {
