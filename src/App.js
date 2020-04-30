@@ -154,13 +154,13 @@ const runChallenge10 = () => {
   ];
   // eslint-disable-next-line
   var planetMass;
+  var outputElement = document.getElementById('challenge10Output');
   // Write your code below this
 
   // Calculate the sum of the planet weights.
 
   // Write your code above this
-  if (planetMass === 446.619 ) {
-    var outputElement = document.getElementById('challenge10Output');
+  if (planetMass >= 446.618 && planetMass <= 446.620) {
     outputElement.innerHTML = 'You have solved the tenth challenge!';
   }
 }
@@ -179,13 +179,13 @@ const runChallenge11 = () => {
   ];
   // eslint-disable-next-line
   var planetMass;
+  var outputElement = document.getElementById('challenge11Output');
   // Write your code below this
 
   // Calculate the sum of the planet weights.
 
   // Write your code above this
-  if (planetMass === 446.619 ) {
-    var outputElement = document.getElementById('challenge11Output');
+  if (planetMass >= 446.618 && planetMass <= 446.620) {
     outputElement.innerHTML = 'You have solved the eleventh challenge!';
   }
 }
