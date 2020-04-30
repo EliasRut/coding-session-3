@@ -295,12 +295,6 @@ const runChallenge13 = () => {
   // Write your code above this
 }
 
-
-var numCallMeForChallenge13WasCalled = 0;
-const callMeForChallenge13 = () => {
-  numCallMeForChallenge13WasCalled++;
-}
-
 const runChallenge14 = () => {
   var outputElement = document.getElementById('challenge14Output');
   // Write your code below this
