@@ -186,8 +186,28 @@ const runChallenge11 = () => {
   // Write your code above this
   if (planetMass === 446.619 ) {
     var outputElement = document.getElementById('challenge11Output');
-    outputElement.innerHTML = 'You have solved the tenth challenge!';
+    outputElement.innerHTML = 'You have solved the eleventh challenge!';
   }
+}
+
+const runChallenge12 = () => {
+  // eslint-disable-next-line
+  const solarSystemPlanets = [
+    ['Mercury', 0.055], // Mass is in Earths
+    ['Venus', 0.815],
+    ['Earth', 1],
+    ['Mars', 0.107],
+    ['Jupiter', 317.8],
+    ['Saturn', 95.159],
+    ['Uranus', 14.536],
+    ['Neptune', 17.147],
+  ];
+  // Write your code below this
+  // Sorry, no automatic grading - you need to know if you solved this one yourself
+
+  // Sort the planets by their weight, and write the list into the output place
+
+  // Write your code above this
 }
 
 function App() {
