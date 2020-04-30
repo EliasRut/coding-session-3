@@ -159,7 +159,7 @@ const runChallenge9 = () => {
     }
     else{
       if (inputElement.value<31 & inputElement.value>29){
-        //if (inputElement.value === 13){
+      //if (inputElement.value === 13){
         outputElement.innerHTML = '1 SnowWhite   2 Cinderella   3 Aurora   4 Ariel   5 Belle   6 Jasmine   7 Pocahontas   8 Mulan   9 Tiana   10 Rapunzel   11 Merida   12 Moana';
         //outputElement.innerHTML = 'it works';
       }
