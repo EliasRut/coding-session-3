@@ -143,6 +143,31 @@ const runChallenge9 = () => {
 const runChallenge10 = () => {
   // eslint-disable-next-line
   const solarSystemPlanets = [
+    0.055, // Mercury
+    0.815, // Venus
+    1, // Earth
+    0.107, // Mars
+    317.8, // Jupiter
+    95.159, // Saturn
+    14.536, // Uranus
+    17.147, // Neptune
+  ];
+  // eslint-disable-next-line
+  var planetMass;
+  // Write your code below this
+
+  // Calculate the sum of the planet weights.
+
+  // Write your code above this
+  if (planetMass === 446.619 ) {
+    var outputElement = document.getElementById('challenge10Output');
+    outputElement.innerHTML = 'You have solved the tenth challenge!';
+  }
+}
+
+const runChallenge11 = () => {
+  // eslint-disable-next-line
+  const solarSystemPlanets = [
     ['Mercury', 0.055], // Mass is in Earths
     ['Venus', 0.815],
     ['Earth', 1],
@@ -160,7 +185,7 @@ const runChallenge10 = () => {
 
   // Write your code above this
   if (planetMass === 446.619 ) {
-    var outputElement = document.getElementById('challenge10Output');
+    var outputElement = document.getElementById('challenge11Output');
     outputElement.innerHTML = 'You have solved the tenth challenge!';
   }
 }
