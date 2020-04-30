@@ -140,9 +140,7 @@ const runChallenge9 = () => {
   var inputValue = inputElement.value;
   var inputNumber = Number(inputValue);
   var outputElement = document.getElementById('challenge9Output');
-    if (isNaN(inputNumber)) { 
-    outputElement.innerHTML = 'Error: Not a number.';
-  }
+    
   // Write your code below this
   // Sorry, no automatic grading - you need to know if you solved this one yourself
 
@@ -151,30 +149,30 @@ const runChallenge9 = () => {
   // happens. Think about what the edge cases are and make sur to test those.
 
   // Write your code above this
+  if (isNaN(inputNumber)) { 
+    outputElement.innerHTML = 'Error: Not a number.';
+  }
   else{
-    debugger;
     if (inputNumber<13 && inputNumber>0){
     
-      outputElement.innerHTML = listOfOfficialDisneyPrincesses[inputElement.value-1];
+      outputElement.innerHTML = listOfOfficialDisneyPrincesses[inputNumber-1];
     
     }
-    else{
-      if (inputNumber<31 && inputNumber>29){
+    else if (inputNumber === 13){
         outputElement.innerHTML = listOfOfficialDisneyPrincesses.map(
-          (name, index) => `${index+1} ${name}`
+          (name, index) => `Prinzess: ${index+1} ${name}`
         ).join('<br />');
-      //if (inputElement.value === 13){
         // outputElement.innerHTML = '1 SnowWhite   2 Cinderella   3 Aurora   4 Ariel   5 Belle   6 Jasmine   7 Pocahontas   8 Mulan   9 Tiana   10 Rapunzel   11 Merida   12 Moana';
         //outputElement.innerHTML = 'it works';
       }
       else{  
-        outputElement.innerHTML = 'No Prinzess has this number. Check out their numbers with pressing 30';
+        outputElement.innerHTML = 'No Prinzess has this number. Check out their numbers with pressing 13';
       }
     }
   }
 
 
-}
+
 
 function App() {
   return (
