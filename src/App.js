@@ -140,6 +140,31 @@ const runChallenge9 = () => {
   // Write your code above this
 }
 
+const runChallenge10 = () => {
+  // eslint-disable-next-line
+  const solarSystemPlanets = [
+    ['Mercury', 0.055], // Mass is in Earths
+    ['Venus', 0.815],
+    ['Earth', 1],
+    ['Mars', 0.107],
+    ['Jupiter', 317.8],
+    ['Saturn', 95.159],
+    ['Uranus', 14.536],
+    ['Neptune', 17.147],
+  ];
+  // eslint-disable-next-line
+  var planetMass;
+  // Write your code below this
+
+  // Calculate the sum of the planet weights.
+
+  // Write your code above this
+  if (planetMass === 446.619 ) {
+    var outputElement = document.getElementById('challenge10Output');
+    outputElement.innerHTML = 'You have solved the tenth challenge!';
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -226,6 +251,30 @@ function App() {
           <div>
             <div className="outputHeader">Output:</div>
             <div className="outputSpace" id="challenge9Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 10</div>
+          <button onClick={() => runChallenge10()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge10Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 11</div>
+          <button onClick={() => runChallenge11()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge11Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 12</div>
+          <button onClick={() => runChallenge12()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge12Output"></div>
           </div>
         </div>
       </div>
