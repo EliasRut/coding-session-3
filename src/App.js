@@ -210,6 +210,68 @@ const runChallenge12 = () => {
   // Write your code above this
 }
 
+var numCallMeForChallenge13WasCalled = 0;
+const callMeForChallenge13 = () => {
+  numCallMeForChallenge13WasCalled++;
+}
+
+const runChallenge13 = () => {
+  var outputElement = document.getElementById('challenge13Output');
+  // Write your code below this
+
+  // Call the function callMeForChallenge13!
+
+  if (numCallMeForChallenge13WasCalled === 1) {
+    outputElement.innerHTML = 'You have solved the 13th challenge!';
+  }
+  // Write your code above this
+}
+
+
+var numCallMeForChallenge13WasCalled = 0;
+const callMeForChallenge13 = () => {
+  numCallMeForChallenge13WasCalled++;
+}
+
+const runChallenge14 = () => {
+  var outputElement = document.getElementById('challenge14Output');
+  // Write your code below this
+
+  var doPlanetsSpin;
+  // Implement the function doPlanetsSpin - it should just always return true!
+
+
+  // Write your code above this
+  if (doPlanetsSpin() === true) {
+    outputElement.innerHTML = 'You have solved the 14th challenge!';
+  }
+}
+
+const runChallenge15 = () => {
+  const solarSystemPlanets = [
+    ['Mercury', 0.055], // Mass is in Earths
+    ['Venus', 0.815],
+    ['Earth', 1],
+    ['Mars', 0.107],
+    ['Jupiter', 317.8],
+    ['Saturn', 95.159],
+    ['Uranus', 14.536],
+    ['Neptune', 17.147],
+  ];
+  const outputElement = document.getElementById('challenge15Output');
+  // Write your code below this
+
+  var getPlanetMass;
+  // Implement the function getPlanetMass - it should
+  //    take a name as parameter and
+  //    return the mass of the planet with that name
+
+  // Write your code above this
+  if (getPlanetMass('Mercury') === 0.055 && getPlanetMass('Saturn') === 95.159) {
+    outputElement.innerHTML = 'You have solved the 15th challenge!';
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -320,6 +382,30 @@ function App() {
           <div>
             <div className="outputHeader">Output:</div>
             <div className="outputSpace" id="challenge12Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 13</div>
+          <button onClick={() => runChallenge13()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge13Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 14</div>
+          <button onClick={() => runChallenge14()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge14Output"></div>
+          </div>
+        </div>
+        <div className="Challenge">
+          <div className="header">Challenge 15</div>
+          <button onClick={() => runChallenge15()}>Run</button>
+          <div>
+            <div className="outputHeader">Output:</div>
+            <div className="outputSpace" id="challenge15Output"></div>
           </div>
         </div>
       </div>
