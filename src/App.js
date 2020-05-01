@@ -42,19 +42,19 @@ const runChallenge4 = () => {
   var princesses = ['Anna', 'Syndi', 'Theodora'];
   // Write your code below this
 
-
+princesses = ['Anna', 'Syndi', 'Theodora']
 
   // Write your code above this
   if (princesses.length >= 4) {
     console.log('You have solved the fourth challenge!');
-  }
+  } 
 }
 
 const runChallenge5 = () => {
   var princesses = ['Anna', 'Syndi', 'Theodora'];
   // Write your code below this
 
-
+  princesses.push [0] ='Veronica'
 
   // Write your code above this
   if (princesses[0] === 'Veronica') {
@@ -66,7 +66,7 @@ const runChallenge6 = () => {
   var princesses = ['Anna', 'Syndi', 'Theodora'];
   // Write your code below this
 
-
+  princesses = []
 
   // Write your code above this
   if (princesses.length === 0) {
